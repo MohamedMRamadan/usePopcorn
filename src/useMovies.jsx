@@ -13,7 +13,7 @@ const useMovies = (query, callback) => {
         setError("");
         setLoading(true);
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=f3e4cca5&s=${query || "interstellar"}
+          `https://www.omdbapi.com/?apikey=f3e4cca5&s=${query || "interstellar"}
           `,
           { signal: controller.signal }
         );
