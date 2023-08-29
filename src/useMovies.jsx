@@ -1,7 +1,5 @@
 import { useEffect, useState } from "react";
 
-const key = "f3e4cca5";
-
 const useMovies = (query, callback) => {
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -15,7 +13,7 @@ const useMovies = (query, callback) => {
         setError("");
         setLoading(true);
         const response = await fetch(
-          `http://www.omdbapi.com/?apikey=${key}&s=${query || "interstellar"}
+          `http://www.omdbapi.com/?apikey=f3e4cca5&s=${query || "interstellar"}
           `,
           { signal: controller.signal }
         );
