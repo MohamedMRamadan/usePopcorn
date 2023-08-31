@@ -26,7 +26,6 @@ const MovieDetails = ({
     Runtime: runtime,
   } = movieDetails;
   const countRef = useRef(0);
-  console.log(movieDetails);
   useKey("Escape", onCloseSelectedMovie);
 
   useEffect(() => {
@@ -125,6 +124,7 @@ const MovieDetails = ({
                   <StarsRating
                     maxRating={10}
                     size={24}
+                    className="container"
                     onSetRating={setUserRating}
                   />
                   {userRating > 0 && (

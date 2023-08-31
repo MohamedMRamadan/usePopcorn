@@ -14,7 +14,7 @@ const WatchedMovie = ({ movie, onDeleteWatched }) => {
         </p>
         <p>
           <span>⏳</span>
-          <span>{movie.runtime} min</span>
+          <span>{movie.runtime || 90} min</span>
         </p>
         <button
           className="btn-delete"
